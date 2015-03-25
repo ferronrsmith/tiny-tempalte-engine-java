@@ -6,7 +6,7 @@ import java.util.Map;
 public class T {
 
     String template;
-    Map<String, Object> options = new HashMap<String, Object>();
+    Map<String, Object> options = new HashMap<>();
 
     public T (String template) {
         this.template = template;
