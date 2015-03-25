@@ -13,3 +13,5 @@ new T("Hello {who}! It's {time} ms since epoch. Yay {who}")
   .render()
  // return Hello Java! It's 17-Mar-2010 ms since epoch. Yay Java
 ```
+
+> The `toString` method of the object passed must be implemented of the object ID will be returned during transposing process
