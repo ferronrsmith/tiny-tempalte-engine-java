@@ -7,7 +7,7 @@
 
 	<properties>
 		<!-- # Build params -->
-		<project.build.jdkVersion>1.8</project.build.jdkVersion>
+		<project.build.jdkVersion>1.7</project.build.jdkVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
