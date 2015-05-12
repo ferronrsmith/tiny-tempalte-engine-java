@@ -6,7 +6,7 @@ import java.util.Map;
 public class T {
 
     String template;
-    Map<String, Object> options = new HashMap<String, Object>();
+    Map<String, Object> options = new HashMap<>();
 
     public T (String template) {
         this.template = template;
@@ -14,6 +14,11 @@ public class T {
 
     public T add (String key, Object value) {
         options.put(key, value);
+        return this;
+    }
+
+    public T add (Map<String, Object> map) {
+        options.putAll(map);
         return this;
     }
 

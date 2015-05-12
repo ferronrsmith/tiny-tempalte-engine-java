@@ -18,4 +18,4 @@ new T("Hello {who}! It's {time} ms since epoch. Yay {who}")
 
 [![Build Status](https://travis-ci.org/ferronrsmith/tiny-template-engine-java.svg)](https://travis-ci.org/ferronrsmith/tiny-template-engine-java)
 
-A JavaScript version can be foud here : [Tiny Template Engine](https://github.com/ferronrsmith/tiny-template-engine)
+A JavaScript version can be found here : [Tiny Template Engine](https://github.com/ferronrsmith/tiny-template-engine)
