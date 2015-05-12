@@ -43,7 +43,7 @@ public class TemplateTest {
         assertEquals(new T("Hello {who}! It's {time} ms since epoch. Yay {who}. My name is {name}")
                              .add("name", "ferron")
                              .add(map)
-                            .render(), "Hello Java! It's 17-Mar-2010 ms since epoch. Yay Java. My name is {name}");
+                            .render(), "Hello Java! It's 17-Mar-2010 ms since epoch. Yay Java. My name is ferron");
     }
 
 }
