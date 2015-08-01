@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class T {
 
+    String FORMAT_REGEX = "\\{%s\\}";
     String template;
     Map<String, Object> options = new HashMap<>();
 
@@ -22,9 +23,14 @@ public class T {
         return this;
     }
 
+    public T setFormatter(String regex) {
+        FORMAT_REGEX = regex;
+        return this;
+    }
+
     public String render() {
         for (Map.Entry<String, Object> entry : options.entrySet()) {
-            template = template.replaceAll(String.format("\\{%s\\}", entry.getKey()), entry.getValue().toString());
+            template = template.replaceAll(String.format(FORMAT_REGEX, entry.getKey()), entry.getValue().toString());
         }
         return template;
     }
