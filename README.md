@@ -12,6 +12,14 @@ new T("Hello {who}! It's {time} ms since epoch. Yay {who}")
   .add("time", "17-Mar-2010")
   .render()
  // return Hello Java! It's 17-Mar-2010 ms since epoch. Yay Java
+
+//configure the formatter to use ${} for interpolation instead of {}
+new T("Hello ${who}! It's ${time} ms since epoch. Yay ${who}")
+  .add("who", "Java")
+  .add("time", "17-Mar-2010")
+  .setFormatter("\\$\\{%s\\}")
+  .render()
+ // return Hello Java! It's 17-Mar-2010 ms since epoch. Yay Java
 ```
 
 > The `toString` method of the object passed must be implemented of the object ID will be returned during transposing process
